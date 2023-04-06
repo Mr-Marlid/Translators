@@ -1,6 +1,6 @@
 from nltk import sent_tokenize
 from nltk import word_tokenize
-from shlex import split
+
 
 def check (command):
     dig = 1
@@ -10,7 +10,7 @@ def check (command):
     ind = 1
     Out = []
     Operations = ['+', '-', '*', '/', '**','<','>', '==', '!=', '<=', '>=', '=', '<<', '>>','#']
-    words = ['if', 'else if', 'else', 'return', 'for', 'in', 'using', 'namespace', 'class', ]
+    words = ['if', 'else if', 'else', 'return', 'for', 'in', 'using', 'namespace', 'class', 'Console.WriteLine','static','public', 'void', 'int']
     rs = ['(', ')', '[', ']', ':','{','}']
 
     for i in range(len(command)):
